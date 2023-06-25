@@ -1,0 +1,255 @@
+{
+  "hotel": [
+    {
+      "id": 1,
+      "title": "Resort Novotel Phú Quốc",
+      "image": "novotel.jpg",
+      "address": "Khu phố 5, Đường Bào, Xã Dương Tơ, Thành phố Phú Quốc, Tỉnh Kiên Giang",
+      "price": 1990000,
+      "oldprice": 50000
+    },
+    {
+      "id": 2,
+      "title": "Khu nghỉ dưỡng VinOasis Phú Quốc",
+      "image": "vinoasis.jpg",
+      "address": "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
+      "price": 6860000,
+      "oldprice": 100000
+    },
+    {
+      "id": 3,
+      "title": "Khách sạn Riva Vũng Tàu",
+      "image": "riva.jpg",
+      "address": "03-05 Thùy Vân, Phường 2, Thành phố Vũng Tầu, Bà Rịa - Vũng Tàu",
+      "price": 880000,
+      "oldprice": 80000
+    },
+    {
+      "id": 4,
+      "title": "Khách sạn Ibis Styles Vũng Tàu",
+      "image": "ibis.jpg",
+      "address": "113 Thùy Vân, phường Thắng Tam, thành phố Vũng Tàu, Việt Nam",
+      "price": 2345000,
+      "oldprice": 30000
+    },
+    {
+      "id": 5,
+      "title": "Vinpearl Resort & Spa Phú Quốc",
+      "image": "vinpearlpq.jpg",
+      "address": "Khu Bãi Dài, Xã Gành Dầu, Huyện Phú Quốc, Tỉnh Kiên Giang",
+      "price": 3488000,
+      "oldprice": 90000
+    },
+    {
+      "id": 6,
+      "title": "Khách sạn Mường Thanh Holiday Đà Lạt",
+      "image": "muongthanhdl.jpg",
+      "address": "42 Phan Bội Châu, Phường 1, Tp. Đà Lạt, Lâm Đồng",
+      "price": 1689000,
+      "oldprice": 250000
+    },
+    {
+      "id": 7,
+      "title": "Khách sạn Golf Valley Đà Lạt",
+      "image": "golfvalleydl.jpg",
+      "address": "94 Đường Bùi Thị Xuân, Phường 2, Thành phố Đà Lạt, Lâm Đồng",
+      "price": 1190000,
+      "oldprice": 200000
+    },
+    {
+      "id": 8,
+      "title": "Ana Mandara Villas Đà Lạt Resort & Spa",
+      "image": "anamandara.jpg",
+      "address": "Đường Lê Lai, Phường 5, Thành phố Đà Lạt, Lâm Đồng",
+      "price": 1689000,
+      "oldprice": 150000
+    },
+    {
+      "id": 9,
+      "title": "Vinpearl Phú Quốc",
+      "image": "vinpq.jpg",
+      "address": "Giao Thủy, Nam Định",
+      "price": 1689000,
+      "oldprice": 200000
+    }
+  ],
+  "festival": [
+    {
+      "id": 1,
+      "title": "Lễ hội Khai ấn đền Trần sẽ được mở lại vào ngày 4-2",
+      "image": "dentran.jpg",
+      "date": "11/01/2023"
+    },
+    {
+      "id": 2,
+      "title": "Nhiều điểm check-in nổi tiếng ở TPHCM phục vụ người dân vui xuân",
+      "image": "tphcm.jpg",
+      "date": "06/01/2023"
+    },
+    {
+      "id": 3,
+      "title": "Những địa điểm hành hương Công giáo Việt Nam cho ngày đầu năm mới",
+      "image": "nhatho.jpg",
+      "date": "31/12/2022"
+    },
+    {
+      "id": 4,
+      "title": "Festival Huế 2023 tiếp nối bốn mùa lễ hội",
+      "image": "hue.jpg",
+      "date": "16/12/2022"
+    },
+    {
+      "id": 5,
+      "title": "Lễ hội áo dài du lịch Hà Nội 2022- “Đại sứ Du lịch” Việt Nam",
+      "image": "aodai.jpg",
+      "date": "16/12/2022"
+    },
+    {
+      "id": 6,
+      "title": "Lễ hội ‘Sắc thu hồ Ba Bể’ lần đầu tổ chức tại Bắc Kạn",
+      "image": "tphcm1.jpg",
+      "date": "26/10/2022"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "huongvn",
+      "password": "huongdeptrai"
+    },
+    {
+      "id": 2,
+      "username": "kimchi",
+      "password": "kimchi"
+    },
+    {
+      "id": 5,
+      "username": "huongvn",
+      "password": "huongdeptrai"
+    }
+  ],
+  "feedback": [
+    {
+      "department": "Chăm sóc khách hàng",
+      "name": "Lại Thị Kim Chi",
+      "phone": "0888888888",
+      "email": "chicutite@gmail.com",
+      "message": "Yêu Vũ Nguyên Hướng vl :3",
+      "id": 1
+    },
+    {
+      "department": "Marketing",
+      "name": "Đinh Hải Dương",
+      "phone": "0999111999",
+      "email": "duongdh@gmail.com",
+      "message": "vietnambooking marketing phải nói rất chất!",
+      "id": 2
+    },
+    {
+      "department": "Nhân sự",
+      "name": "Đặng Thanh Phương",
+      "phone": "0888999666",
+      "email": "phuongdt@gmail.com",
+      "message": "Nhân viên phục vụ của vietnambooking rất chu đáo và nhiệt tình!",
+      "id": 3
+    }
+  ],
+  "order": [
+    {
+      "name": "Lai Thi Kim Chi",
+      "email": "huongvnph27229@fpt.edu.vn",
+      "phone": "002920439320",
+      "songuoi": 3,
+      "ngaydatphong": "2023-02-21T17:00:00.000Z",
+      "ngaytraphong": "2023-02-05T17:00:00.000Z",
+      "chuthich": "phòng có hút thuốc",
+      "idHotel": "3",
+      "id": 2
+    },
+    {
+      "name": "Lai Thi Kim Chi",
+      "email": "eimi80@yahoo.com",
+      "phone": "0395080513",
+      "songuoi": 5,
+      "ngaydatphong": "2023-02-22T17:00:00.000Z",
+      "ngaytraphong": "2023-02-12T17:00:00.000Z",
+      "chuthich": "21",
+      "idHotel": "3",
+      "id": 3
+    },
+    {
+      "name": "Kim Chi",
+      "email": "lmht1717@gmail.com",
+      "phone": "0123456789",
+      "songuoi": 1,
+      "ngaydatphong": "2023-02-28T17:00:00.000Z",
+      "ngaytraphong": "2023-02-26T17:00:00.000Z",
+      "idHotel": "2",
+      "id": 5
+    },
+    {
+      "name": "Vu Nguyen Huong",
+      "email": "ulh92796@zcrcd.com",
+      "phone": "01234567890",
+      "songuoi": 12,
+      "ngaydatphong": "2023-02-04T17:00:00.000Z",
+      "ngaytraphong": "2023-02-22T17:00:00.000Z",
+      "chuthich": "2121212",
+      "idHotel": "4",
+      "id": 7
+    },
+    {
+      "name": "Vu Nguyen Huong",
+      "email": "lmht1717@gmail.com",
+      "phone": "0123456789",
+      "songuoi": 1,
+      "ngaydatphong": "2023-02-21T17:00:00.000Z",
+      "ngaytraphong": "2023-02-27T17:00:00.000Z",
+      "idHotel": "4",
+      "id": 10
+    },
+    {
+      "name": "Đặng Thanh Phương",
+      "email": "phuongdt@gmail.com",
+      "phone": "0123456789",
+      "songuoi": 3,
+      "ngaydatphong": "2023-02-14T17:00:00.000Z",
+      "ngaytraphong": "2023-02-27T17:00:00.000Z",
+      "chuthich": "phòng không có người hút thuốc, có trẻ em",
+      "idHotel": "8",
+      "id": 13
+    },
+    {
+      "name": "Vu Nguyen Huong",
+      "email": "lmht1717@gmail.com",
+      "phone": "0395080513",
+      "songuoi": 1,
+      "ngaydatphong": "2023-02-15T17:00:00.000Z",
+      "ngaytraphong": "2023-03-01T17:00:00.000Z",
+      "chuthich": "phamducanh",
+      "idHotel": "2",
+      "id": 14
+    },
+    {
+      "name": "Kim Chi",
+      "email": "lmht1717@gmail.com",
+      "phone": "0395080513",
+      "songuoi": 1,
+      "ngaydatphong": "2023-02-21T17:00:00.000Z",
+      "ngaytraphong": "2023-02-28T17:00:00.000Z",
+      "chuthich": "sd;fhfsdhulgds",
+      "idHotel": "2",
+      "id": 15
+    },
+    {
+      "name": "Lai Thi Kim Chi",
+      "email": "lmht1717@gmail.com",
+      "phone": "0395080513",
+      "songuoi": 5,
+      "ngaydatphong": "2023-06-13T17:00:00.000Z",
+      "ngaytraphong": "2023-06-27T17:00:00.000Z",
+      "idHotel": "2",
+      "id": 16
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<div id="carouselId" class="carousel slide d-none d-xl-block d-md-block" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active __itemslide">
+            <img src="../assets/images/slides/slide1.jpg" width="100%">
+        </div>
+        <div class="carousel-item __itemslide">
+            <img src="../assets/images/slides/slide2.jpg" width="100%">
+        </div>
+        <div class="carousel-item __itemslide">
+            <img src="../assets/images/slides/slide3.jpg" width="100%">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container">
+    <h4 class="text-center mt-3">Tại sao chọn <span class="__brand">VIETNAM BOOKING</span> ?</h4>
+    <div class="row p-5" style="text-align: justify;">
+        <div class="col-xl-4 col-md-6 mb-3">
+            <h5><strong><i class="fa-solid fa-plane"></i> Công nghệ trí tuệ nhân tạo</strong></h5>
+            <span>Tự động tìm vé rẻ nhất để đảm bảo giá thành phù hợp cho ngân sách của bạn.</span>
+        </div>
+        <div class="col-xl-4 col-md-6 mb-3">
+            <h5><strong><i class="fa-solid fa-clock"></i> Tiết kiệm thời gian</strong></h5>
+            <span>Xác nhận ngay, không cần đợi nhân viên tư vấn tìm phòng và vé mất thời gian.</span>
+        </div>
+        <div class="col-xl-4">
+            <h5><strong><i class="fa-solid fa-piggy-bank"></i> Rẻ nhất thị trường</strong></h5>
+            <span>Giá cuối cùng, không thu thêm phí ngoài như các trang khác. Bán đúng giá để bạn yên tâm lựa chọn.</span>
+        </div>
+    </div>
+    <div class="text-center">
+        <h4 class=""><strong>Khám phá các chủ đề hấp dẫn</strong></h4>
+        <p class="ms-3 me-3">Xem ngay những chủ đề khách sạn hấp dẫn đang được nhiều du khách quan tâm nhất!</p>
+    </div>
+    <div class="m-3 __festival">
+        <h4><strong>Lễ hội - Festival</strong></h4>
+        <div class="row">
+            <div class="col-xl-4">
+                <img src="../assets/images/content/bui-vien.jpg" width="100%" class="rounded-2">
+            <h6 class="mt-2"><strong>Top địa điểm vui chơi dịp Tết Quý Mão 2023 ở Sài Gòn</strong></h6>
+            <span class="text-muted"><i class="fas fa-calendar-days"></i> 21/01/2023</span>
+            <span class="text-muted ms-2"><i class="fas fa-eye"></i> 3 lượt xem</sp>
+            <p class="mt-2">Để khám phá một không khí Sài Gòn khác biệt ngày thường thì những điểm vui chơi dưới đây mà...</p>
+            </div>
+            <div class="col-xl-8">
+                <div class="row">
+                    <div class="col-xl-6 col-md-4 col-sm-6 col-6 mb-2" ng-repeat="f in listFestival">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <img src="../assets/images/content/{{f.image}}" width="100%" class="rounded-2" style="object-fit: cover; height: 110px;">
+                            </div>
+                            <div class="col-xl-6">
+                                <h6 class="mt-2 __title">{{f.title}}</h6>
+                                <span class="text-muted"><i class="fas fa-calendar-days"></i> {{f.date}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="__itemslide d-none d-md-block d-xl-block">
+    <img src="../assets/images/banner-hotel.jpg" width="100%">
+</div>
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-xl-4 col-md-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#!home" class="text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Khách sạn</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-xl-4 col-md-4 col-sm-6">
+            <input class="form-control mb-3" type="text" placeholder="Tìm kiếm khách sạn ..." ng-model="searchText">
+        </div>
+        <div class="col-xl-4 col-md-4 col-sm-6">
+            <select class="form-select" ng-model="orderByValue" ng-attr-title="Bộ lọc khách sạn">
+                <option value="price">Giá</option>
+                <option value="name">Tên</option>
+            </select>
+        </div>
+    </div>
+    <h4>Khách Sạn Khuyến Mãi</h4>
+    <p>Chính sách ưu đãi tại Vietnam Booking lên đến 60% tiền phòng</p>
+    <div class="row">
+        <div class="col-xl-3 col-md-6 mb-3" ng-repeat="h in listHotel | limitTo : 4 : begin | filter : searchText | orderBy : orderByValue : true">
+            <img src="../assets/images/hotel/{{h.image}}" width="100%" class="rounded-2 __itemhotel" style="object-fit: cover; height: 240px;">
+            <h6 class="mt-2 fw-bol __title"><a href="" class="text-decoration-none">{{h.title}}</a></h6>
+            <span class="fw-bold text-danger"><i class="fa-solid fa-sack-dollar"></i> <span class="text-secondary"><del>{{h.price + h.oldprice | number}} VNĐ</del></span> {{h.price | number}} VNĐ</span>
+            <small class="text-muted __location"><i class="fa-solid fa-location-dot"></i> {{h.address}}</small>
+            <div class="text-center">
+                <a role="button" type="button" class="btn btn-primary position-relative w-100" href="#!hotel/{{h.id}}">
+                    Xem ngay
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        {{h.oldprice/h.price*100 | number : 1}} %
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button type="button" class="btn btn-secondary" ng-click="prev()">Trang trước</button>
+        <span>Page <strong class="text-danger">{{currentPage}}</strong>  of <strong class="text-danger">{{pageCount}}</strong></span>
+        <button type="button" class="btn btn-primary" ng-click="next()">Trang sau</button>
+    </div>
+</div>

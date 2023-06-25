@@ -1,0 +1,146 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap'); */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow-x: hidden; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.__navigation {
+    background-color: #0064D2;
+}
+
+.__button, .__nav-colapse li a{
+    color: #fff;
+}
+
+.__nav-colapse li a:hover {
+    color: yellow;
+}
+
+h5 {
+    color: #3597ff;
+}
+
+.__brand, h5:hover {
+    color: #0064D2;
+}
+
+h5::after,h6::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #0064D2;
+    margin-top: 3px;
+    transition: width .3s;
+}
+
+h5:hover::after,h6:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.__festival img:hover {
+    opacity: 0.7;
+}
+
+.__itemslide img{
+    object-fit: cover;
+    height: 300px;
+}
+
+.__boxshadow {
+    box-shadow: 0 0 5px 5px #e7e7e7ae;
+}
+
+.__location {
+    width: 255px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 2;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.__title {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.__gradient {
+    background: linear-gradient(-45deg, #deffd4, #eeefff, #ebfaff, #effffb);
+    background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+}
+
+/* animation */
+
+@keyframes headerNotifyGrowth {
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.6;
+        transform: translateY(-550px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+::selection {
+    background-color: #0064D2;
+    color: #fff;
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4ba2ff;
+} */

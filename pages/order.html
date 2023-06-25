@@ -1,0 +1,96 @@
+<div class="container mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page"><a href="#!home" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#!hotel" class="text-decoration-none">Khách sạn</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Đặt phòng khách sạn</li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col-xl-5 col-md-5">
+            <div class="">
+                <h5 class="mb-3 mt-3"><strong>Thông tin đặt phòng</strong></h5>
+                <div class="position-relative">
+                    <img src="../assets/images/hotel/{{hotel.image}}" width="100%">
+                    <span class="position-absolute bottom-0 start-50 translate-middle badge rounded-pill bg-danger">
+                        SALE OFF {{hotel.oldprice/hotel.price*100 | number : 1}} %
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </div>
+                <h5 class="mt-2 fw-bol"><a href="" class="text-decoration-none"><strong>{{hotel.title}}</strong></a></h5>
+                <p class="text-muted"><i class="fa-solid fa-location-dot"></i> {{hotel.address}}</p>
+                <p class="fw-bold">
+                    <span class="text-secondary">
+                        <del>{{hotel.oldprice + hotel.price | number}} VNĐ</del>
+                    </span>
+                    <span class="text-danger fs-4">{{hotel.price | number}} VNĐ</span> / đêm
+                </p>
+            </div>
+            <div class="bg-light rounded-2 p-3">
+                <span>Booking của bạn đang được chờ xác nhận. Tư vấn viên sẽ sớm liên hệ với bạn</span>
+            </div>
+            <div class="bg-secondary rounded-2 pt-2 pb-2 ps-3 pe-3 mt-2">
+                <span class="text-white"><i class="fa-solid fa-phone-volume"></i> Gọi <strong>0395 080 513</strong> để được hỗ trợ 24/7</span>
+            </div>
+        </div>
+
+        <div class="col-xl-7 col-md-7">
+            <h5 class="mb-3 mt-3"><strong>Điền thông tin liên hệ</strong></h5>
+            <form action="" method="dialog" name="frmThongTin">
+                <div class="row">
+                    <div class="col-xl-12 mb-2">
+                        <label for="" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" required name="name" ng-model="name">
+                        <small class="text-danger" ng-if="frmThongTin.name.$invalid">Tên không hợp lệ!</small>
+                    </div>
+                    <div class="col-xl-6 col-md-6 mb-2">
+                        <label for="" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" required name="email" ng-model="email">
+                        <small class="text-danger" ng-if="frmThongTin.email.$invalid">Email sai định dạng!</small>
+                    </div>
+                    <div class="col-xl-6 col-md-6 mb-2">
+                        <label for="" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" required name="phone" ng-model="phone" pattern="^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$">
+                        <small class="text-danger" ng-if="frmThongTin.phone.$invalid">Số điện thoại sai định dạng!</small>
+                    </div>
+                    <div class="col-xl-12 mb-2">
+                        <label for="" class="form-label">Số người <span class="text-danger">*</span></label>
+                        <input type="number" pattern="^\d+$" class="form-control"  required name="songuoi" ng-model="songuoi">
+                        <small class="text-danger" ng-if="frmThongTin.songuoi.$invalid">Số người không  !</small>
+                    </div>
+                    <div class="col-xl-6 col-md-6 mb-2">
+                        <label for="" class="form-label">Ngày đặt phòng <span class="text-danger">*</span></label>
+                        <input type="date" class="form-control" required name="ngaydatphong" ng-model="ngaydatphong">
+                        <small class="text-danger" ng-if="frmThongTin.ngaydatphong.$invalid">Ngày đặt phòng không hợp lệ!</small>
+                    </div>
+                    <div class="col-xl-6 col-md-6 mb-2">
+                        <label for="" class="form-label">Ngày trả phòng <span class="text-danger">*</span></label>
+                        <input type="date" class="form-control" required name="ngaytraphong" ng-model="ngaytraphong">
+                        <small class="text-danger" ng-if="frmThongTin.ngaytraphong.$invalid">Ngày trả phòng không hợp lệ!</small>
+                    </div>
+                    <div class="col-xl-12" ng-if="frmThongTin.$valid">
+                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <strong>Tất cả thông tin của bạn đều đã hợp lệ!</strong>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 mt-3">
+                        <h6><strong>Hãy cho chúng tôi biết Quý khách cần gì?</strong></h6>
+                        <div class="mb-3">
+                          <label for="" class="form-label text-muted">Lưu ý tất cả các yêu cầu chỉ được đáp ứng tùy theo khách sạn</label>
+                          <textarea class="form-control" name="chuthich" id="" rows="3" ng-model="chuthich"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 mt-1">
+                        <button type="button" class="btn btn-danger" style="width: 100%;" ng-click="resetForm()">Reset</button>
+                    </div>
+                    <div class="col-xl-6 col-md-6 mt-1">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" ng-click="submitOrder()" ng-class="{'disabled': frmThongTin.$invalid}">Đặt phòng</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

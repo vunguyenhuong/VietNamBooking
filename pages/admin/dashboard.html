@@ -1,0 +1,81 @@
+<!-- Nav tabs -->
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link border-0 active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order" type="button" role="tab" aria-controls="order" aria-selected="true">Order</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link border-0" id="feedback-tab" data-bs-toggle="tab" data-bs-target="#feedback" type="button" role="tab" aria-controls="feedback" aria-selected="false">Feedback</button>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="order" role="tabpanel" aria-labelledby="order-tab">
+        <div class="table-responsive">
+            <table class="table table-primary table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Số người</th>
+                        <th>Ngày đặt phòng</th>
+                        <th>Ngày trả phòng</th>
+                        <th>Yêu cầu thêm</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="o in listOrder">
+                        <td>{{$index+1}}</td>
+                        <td>{{o.name}}</td>
+                        <td>{{o.email}}</td>
+                        <td>{{o.phone}}</td>
+                        <td>{{o.songuoi}}</td>
+                        <td>{{o.ngaydatphong | date : 'dd/MM/yyyy'}}</td>
+                        <td>{{o.ngaytraphong | date : 'dd/MM/yyyy'}}</td>
+                        <td>
+                            <textarea class="form-control" disabled>
+                                {{o.chuthich}}
+                            </textarea>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary" href="#!hotel/{{o.idHotel}}" target="blank" role="button"><i class="fa-solid fa-eye"></i></a>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash" ng-click="deleteOrder(o.id)"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="tab-pane" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Department</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="" ng-repeat="f in listFeedback">
+                        <td>{{f.department}}</td>
+                        <td>{{f.name}}</td>
+                        <td>{{f.phone}}</td>
+                        <td>{{f.email}}</td>
+                        <td>{{f.message}}</td>
+                        <td>
+                            <button type="button" class="btn btn-danger" ng-click="deleteFeedback($index)"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
